@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            height: 100vh;
+            background-color: orange;
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+           
+        }
+        .parent:hover{
+            transform-style: flat;
+            transition: 1s;
+            
+            animation-duration: 1s;
+        }
+        .childOne{
+            background-color: blue;
+            height: 300px;
+            width:300px;
+            
+        }
+        .childTwo{
+            background-color: green;
+            height: 300px;
+            width:300px;
+            
+        }
+        .childOne:hover{
+            
+            transform: translateY(-1000px);
+            transition: 1s;
+            
+            
+        }
+        .childTwo:hover{
+            
+            transform: translateY(1000px);
+            transition: 1s;
+            
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="childOne">
+
+        </div>
+        <div class="childTwo">
+
+        </div>
+    </div>
+    <script>
+        
+    </script>
+</body>
+</html>

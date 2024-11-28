@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Style the body to use flexbox for centering */
+        body, html {
+            height: 100%;  
+            margin: 0;     
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            background-color: #f4f4f4; 
+        }
+
+        table {
+            background-color: crimson;
+            border-collapse: collapse; 
+            width: 80%; 
+            color: white;
+            margin-right: 50px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: darkred;
+        }
+        
+        .myform{
+            background-color: crimson;
+            margin-right: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    
+        <form action="" class="myform" >
+            <fieldset>
+                <legend style="color: white;">Form</legend>
+            <label for="username" style="color: white;">Username</label>
+            <input type="text">
+            <br>
+            <label for="Gender" style="color: white;">Gender</label>
+            <label for="" style="color: white;">Male</label>
+            <input type="radio">
+            <label for="" style="color: white;">Female</label> 
+            <input type="radio">
+            <br>
+    
+            <label for="" style="color: white;">Choose your hobbies</label>
+            <label for="" style="color: white;">sports</label>
+            <input type="checkbox">
+            <label for="" style="color: white;">singing</label>
+            <input type="checkbox">
+            <label for="" style="color: white;">dancing</label>
+            <input type="checkbox">
+            <input id="a" type="file" name="" id="file">
+            <button id="btn">Upload</button>
+            </fieldset>
+            
+        </form>
+    
+    
+    <table id="table" border="1">
+        <tr>
+            <th rowspan="2">Subject Code</th>
+            <th colspan="5">Marks</th>
+            <th rowspan="2">Grade</th>
+        </tr>
+        
+        <tr>
+            <th>Subject</th>
+            <th>Theory</th>
+            <th>Practical</th>
+            <th>Total</th>
+            <th>Total (in words)</th>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>Hindi</td>
+            <td>62</td>
+            <td>20</td>
+            <td>82</td>
+            <td>Eighty Two</td>
+            <td>A1</td>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td>English</td>
+            <td>61</td>
+            <td>20</td>
+            <td>82</td>
+            <td>Eighty One</td>
+            <td>A2</td>
+        </tr>
+        <tr>
+            <td>03</td>
+            <td>Mathematics</td>
+            <td>78</td>
+            <td>20</td>
+            <td>98</td>
+            <td>Ninety Eight</td>
+            <td>A3</td>
+        </tr>
+        <tr>
+            <td>04</td>
+            <td>Science</td>
+            <td>88</td>
+            <td>20</td>
+            <td>100</td>
+            <td>One Hundred</td>
+            <td>A4</td>
+        </tr>
+        <tr>
+            <td>05</td>
+            <td>Social Science</td>
+            <td>68</td>
+            <td>20</td>
+            <td>88</td>
+            <td>Eighty Eight</td>
+            <td>A1</td>
+        </tr>
+    </table>
+
+    <script>
+        let btn = document.getElementById("btn");
+        let a = document.getElementById("a");
+
+        btn.addEventListener("click", (e) => {
+            alert("File Uploaded");
+            a.value = "";
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #h2{
+        text-align: center;
+        background-color: aqua;
+        font-size: xx-large;
+    }
+    .div1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box{
+        height: 100px;
+        width: 100px;
+        border: 2px solid;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    #box2{
+        margin-top: 5px;
+        margin-left: 20px;
+        height: 100px;
+        width: 9920px;
+        border: 2px solid;
+
+    }
+</style>
+<body>
+    <h2 id="h2">This is heading</h2>
+    <div class="div1">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div id="box2"></div>
+            <div id="box3"></div>
+
+    </div>
+    <script>
+        let boxes = document.getElementsByClassName("box");
+        let box2 = document.getElementById('box2');
+        let box3 = document.getElementById('box3');
+        for (let i = 0; i < boxes.length; i++) {
+            boxes[i].addEventListener('mouseover', function() {
+                this.style.backgroundColor = "red";
+            });
+            boxes[i].addEventListener('mouseout', function() {
+                this.style.backgroundColor = "red"; 
+            });
+        }
+        box2.addEventListener('mouseover', function() {
+            this.style.backgroundColor = "green";
+        });
+    </script>
+</body>
+</html>
