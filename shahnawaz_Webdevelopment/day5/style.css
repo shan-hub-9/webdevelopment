@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.div5{
+    display: flex;
+    margin-top: 20px;
+}
+.div6{
+    display: flex;
+}
+
+.nav {
+    display: flex;
+    background-color: black;
+    position: fixed;
+    width:1084px;
+   
+    border-radius: 0px 0px 10px 10px;
+}
+
+.nv2:hover {
+    text-decoration: underline;
+}
+
+.ul1 {
+    display: flex;
+    list-style: none;
+    width: cover;
+}
+
+.ul1:hover {
+    text-decoration: underline;
+}
+
+.maindiv {
+    background-color: black;
+}
+
+.div2 {
+    background-color: black;
+    height: 350px;
+    width: cover;
+    display: flex;
+}
+
+.div3 {
+    background-image: url('https://cdn.mos.cms.futurecdn.net/tcJMzYq7PVjyQacEZW5FLH.jpg');
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    height: 400px;
+    width: 1080px;
+    background-size: cover;
+}
+
+.div4 {
+    margin-top: 40px;
+    margin-left: 250px;
+    
+
+}
+.div7{
+    margin-top: 100000px;
+}
+
