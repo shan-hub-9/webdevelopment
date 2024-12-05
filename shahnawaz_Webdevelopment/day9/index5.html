@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,html{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #input{
+            margin-top: 10px;
+        }
+        #password{
+            margin-top: 10px;
+        }
+        #cnfpassword{
+            margin-top: 10px;
+            width: 147px;
+        }
+        button{
+            margin-top: 10px;
+            background-color: white;
+            border: 2px solid;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>This is Your Form</h3>
+        Enter Username: <input id="input" type="text" placeholder="Enter Username" required><br>
+        Enter Password: <input id="password" type="password"  placeholder="Enter Password" required><br>
+        Confirm Password: <input id="cnfpassword" type="password"  placeholder="Confirm Password" required><br>
+        <button id="button">Submit</button>
+        
+    </div>
+    <script>
+        const input = document.getElementById("input")
+        const password = document.getElementById("password")
+        const cnfpassword = document.getElementById("cnfpassword")
+        const pass = password.value;
+        const inp = input.value;
+        const cnfpass = cnfpassword,value;
+        const button = document.getElementById("button")
+        
+        button.addEventListener("click",(e)=>{
+            if(inp === "" || pass === ""){
+                window.alert("Please enter required field")
+            }
+            else (inp === "india" || pass === "1947"){
+                window.alert("Form sumit")
+            }
+        })
+        button.addEventListener("click",(e)=>{
+            if(pass === cnfpass){
+                window.alert("Password not matched , Please check both correctly")
+            })
+    </script>
+</body>
+</html>

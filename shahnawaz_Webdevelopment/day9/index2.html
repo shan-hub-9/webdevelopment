@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center; 
+            align-items: center;     
+        }
+
+        #centered-div {
+            border: 1px solid black; 
+            padding: 20px;
+        }
+        #bt1{
+            border-color: transparent;
+            background-color: transparent;
+            cursor: pointer;
+        }
+        #bt2{
+            border-color: transparent;
+            background-color: transparent;
+            cursor: pointer;
+        }
+        #bt3{
+            border-color: transparent;
+            background-color: transparent;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="Element_id" class="class_id">
+        <h1 id="h">Hello , World</h1>
+        <button id="bt1">Use Id</button>
+        <button id="bt2">Use Class</button>
+        <button id="bt3">Use Query</button>
+    </div>
+    <script>
+        let Element_id = document.getElementById("Element_id")
+        let class_id = document.getElementsByClassName("class_id")
+        let query_id = document.querySelector(".Element_id")
+        const bt1 = document.getElementById("bt1");
+        const bt2 = document.getElementById("bt2");
+        const h = document.getElementById("h")
+        bt1.addEventListener("click",(e)=>{
+            h.innerHTML = "Using Id Selector"
+            console.log(Element_id)
+        })
+        bt2.addEventListener("click",(e)=>{
+            h.innerHTML = "Using Class Selector"
+            console.log(class_id)
+        })
+        bt3.addEventListener("click",(e)=>{
+
+            h.innerHTML = "Using query selector"
+            console.log(class_id)
+        })
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #hh {
+        left: 50%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+       
+
+
+
+    }
+     h3{
+        left: 50%;
+        margin: 0;
+        
+        top: 50%;
+        
+
+     }
+
+    #p {
+        background-color: transparent;
+        border-color: transparent;
+        margin-left: 16px;
+        
+        
+    }
+</style>
+
+<body>
+    <div id="hh">
+        <h3 id="h3">You are eligible to vote</h3>
+        <button id="p">Check Your Age</button>
+    </div>
+    <script>
+        const h3 = document.getElementById("h3");
+        const p = document.getElementById("p");
+        p.addEventListener("click", (e) => {
+            let input = prompt("Enter your age");
+            if (input > 18 || input < 100) {
+                h3.innerHTML = "You are eligible to vote";
+            }
+            else if (input < 18 ) {
+                h3.innerHTML = "You are not eligible";
+            }
+            else if(input>100){
+                h3.innerHTML = "You are not exist";
+            }
+        })
+    </script>
+</body>
+
+</html>
