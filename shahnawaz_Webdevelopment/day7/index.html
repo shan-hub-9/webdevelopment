@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let arr = ["apple", 2, 'e']
+        // // for (let i = 0; i < 3; i++) {
+        // //     console.log(arr[i])
+        // // }
+        // arr.pop();
+        // console.log(arr)
+        // let arr2 = ["apple", 2, 'e','orange']
+
+        // arr.shift()
+        // console.log(arr2)
+        const fruit = ["apple", "melons", "papaya", "mango", "orange"]
+        for (let i = 0; i < fruit.length; i++) {
+            console.log("I like to eat ", fruit[i])
+        }
+        // console.log(fruit.sort().reverse())
+        // fruit.unshift("banana")
+        // fruit.reverse(fruit)
+        // console.log(fruit)
+        // console.log(fruit.length)
+        // console.log(fruit.shift("banana"))
+        // document.write("hello world")
+        const ages = [19, 43, 55, 87, 98, 12, 11, 9, 65, 44]
+        console.log(ages.sort((a, b) => a - b))
+        console.log(ages.sort((a, b) => b - a))
+        // let btn = document.createElement("button")
+        // document.body.appendChild(btn)
+        const fruit = ["apple", "melons", "papaya", "mango", "orange"]
+        let i = 0;
+        // while(i<fruit.length){
+        //     console.log(`I like ${fruit[i]} to eat`)
+        //     i++;
+        // }
+        for (let x in fruit) {
+            console.log(`I like ${fruit[x]} to eat`)
+        }
+        //map
+        console.log("printing fruits using map");
+        fruit.map((item) => {
+            console.log(item);
+        });
+
+        //for each
+        console.log("printing fruits using for each");
+        fruit.forEach((item) => {
+            console.log(item)
+        })
+        const age = [14, 28, 54, 107, 33, 67, 12, 11, 9, 44, 96, 84, 75]
+        const v = age.filter((age) => age > 60);
+        console.log(v)
+        const fruit = ["apple", "banana", "chiku", "dragon fruit", "melons", "papaya", "mango"]
+        const slci = fruit.slice(2, 5);
+        console.log(slci)
+        const fruit = ["apple", "banana", "chiku", "dragon fruit", "melons", "papaya", "mango"]
+        const slci = fruit.splice(2, 5);
+        console.log(slci)
+        const fruit = ["apple", "banana", "chiku", "dragon fruit", "melons", "papaya", "mango"]
+        const slci = fruit.splice(2, 5, "orange", "pineapple");
+        const checkfruit = fruit.includes("melons")
+        console.log(checkfruit)
+        console.log(fruits.at(-4))
+        const student = {
+            name: "Rahul",
+            age: 19,
+            class: "XII",
+            roll_no: 12,
+            printfn: function () {
+                console.log("This is Rahul")
+            }
+        }
+        console.log(student.name)
+        student.printfn()
+        const student = {
+            name: "Rahul",
+            age: 19,
+            class: "XII",
+            roll_no: 12,
+            printfn: function () {
+                console.log("This is Rahul")
+            },
+            address: {
+                state: "Nagaland",
+                city: "kohima",
+                pincode: "87211",
+                landmark: "Mountain",
+            }
+        }
+        console.log(student.name)
+        student.printfn()
+        console.log(student.address.state)
+        const restaurant = {
+            name: "Badmas restaurant",
+            no_of_employees: 23,
+            year_of_Establish: 1990,
+            Type: "veg",
+            Menu: ["panner tikka", "chole badhure", "samosa", "naan"],
+            timing: {
+                opening: "9:00 AM",
+                closing: "1:00 AM"
+            },
+            address: {
+                state: "New delhi",
+                city: "Dwarka",
+                pincode: "110059",
+                landmark: "nsut college"
+            }
+        }
+        console.log(restaurant.name)
+        console.log(restaurant.Menu[0])
+        console.log(restaurant.Menu)
+        console.log(restaurant)
+        let cars = ["audi", "mercedis", "Tata", "Range Rover"];
+        let bikes = ["Pulser", "r15", "Apache", "Bullet", "Kamasaki"];
+        let vehicles = [...cars, ...bikes];
+        console.log(vehicles)\
+        const addTheNumbers =(...rest)=>{
+    const size=rest.length;
+    let sum = 0;
+    for(let i=0; i<size;i++){
+        sum+=rest[i];
+    }
+    console.log(sum)
+}
+addTheNumbers(1,2,3,4,5,6)
+    </script>
+</body>
+
+</html>
